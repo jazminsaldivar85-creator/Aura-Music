@@ -1,0 +1,35 @@
+<body>
+    <link rel="stylesheet" href="estilos.css">
+
+    <header>
+
+        <div class="contenedor">
+            <h1>Registrarse</h1>
+        </div>
+
+    </header>
+    <main>
+        <form>
+            <label>Nombre:</label>
+            <input type="text" required minlength="3" placeholder="Ingrese su nombre">
+            <label>Apellido </label>
+            <input type="text" required minlength="3" placeholder="Ingrese su Apellido">
+            <label>Correo:</label>
+            <input type="email" required>
+            <label>Edad:</label>
+            <input type="number" min="15" max="80">
+            <label>Hora</label>
+            <input type="time">
+            <label>Premium:</label>
+            <select>
+                <option>Individual</option>
+                <option>Duo</option>
+                <option>Familiar</option>
+                <option>Estudiantes</option>
+            </select>
+            <label>Observacion:</label>
+            <textarea></textarea>
+            <button type="submit">Enviar Datos</button>
+        </form>
+    </main>
+</body>

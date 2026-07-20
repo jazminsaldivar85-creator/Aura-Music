@@ -1,0 +1,361 @@
+Página
+1
+de
+1
+100%
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Académico</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #181818;
+        }
+
+        .contenedor {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        .sidebar {
+            width: 240px;
+            background-color: #181818;
+            color: white;
+            padding: 25px;
+        }
+
+        .sidebar h2 {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar li {
+            margin-bottom: 15px;
+        }
+
+        .sidebar a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            background-color: pink;
+            padding: 13px;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        .sidebar a:hover {
+            background-color: pink;
+        }
+
+        .contenido {
+            flex: 1;
+            padding: 30px;
+        }
+
+        .navbar {
+            background-color: white;
+            padding: 20px;
+            border-radius: 14px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+        }
+
+        .navbar h1 {
+            margin: 0;
+            color: pink;
+        }
+
+        .navbar p {
+            margin: 5px 0 0;
+            color: #6c757d;
+        }
+
+        .usuario {
+            background-color: pink;
+            color: white;
+            padding: 12px 18px;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px;
+            margin-bottom: 25px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 25px;
+            border-radius: 14px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+        }
+
+        .card h3 {
+            margin: 0;
+            color: pink;
+        }
+
+        .card p {
+            font-size: 34px;
+            font-weight: bold;
+            color: pink;
+            margin-bottom: 0;
+        }
+
+        .tabla-contenedor {
+            background-color: white;
+            padding: 25px;
+            border-radius: 14px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+        }
+
+        .tabla-contenedor h2 {
+            color: #181818;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            background-color: pink;
+            color: white;
+            padding: 14px;
+            text-align: left;
+        }
+
+        td {
+            padding: 14px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .MasEscuchados {
+            background-color: #d4edda;
+            color: #155724;
+            padding: 7px 10px;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .MenosEscuchados {
+            background-color: #f8d7da;
+            color: #721c24;
+            padding: 7px 10px;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 25px;
+            color: #6c757d;
+        }
+
+        @media (max-width: 900px) {
+
+            .contenedor {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: auto;
+            }
+
+            .cards {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .navbar {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            table {
+                font-size: 14px;
+            }
+
+            th, td {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <aside class="sidebar">
+
+            <h2>Aura Music</h2>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html"> Inicio</a></li>
+                    <li><a href="#"> Artistas</a></li>
+                    <li><a href="#"> Albunes Populares</a></li>
+                    <li><a href="#"> Artistas Destacados</a></li>
+                    <li><a href="#"> Canciones</a></li>
+                    <li><a href="#"> Configuración</a></li>
+                </ul>
+            </nav>
+
+        </aside>
+
+        <main class="contenido">
+
+            <header class="navbar">
+
+                <div>
+                    <h1>Dashboard </h1>
+                    <p>Resumen general de Aura Music</p>
+                </div>
+
+                <div class="usuario">
+                    👤 Administrador
+                </div>
+
+            </header>
+
+            <section class="cards">
+
+                <div class="card">
+                    <h3>Artistas</h3>
+                    <p>8</p>
+                </div>
+
+                <div class="card">
+                    <h3>Albunes Populares</h3>
+                    <p>4</p>
+                </div>
+
+                <div class="card">
+                    <h3>Artistas Destacados</h3>
+                    <p>4</p>
+                </div>
+
+                <div class="card">
+                    <h3>Canciones</h3>
+                    <p>7</p>
+                </div>
+
+            </section>
+
+            <section class="tabla-contenedor">
+
+                <h2>Listado de Artistas</h2>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Canciones</th>
+                           
+                            
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Taylor Swift</td>
+                            <td>The Fate of Ophelia</td>
+                           
+                            <td><span class="MasEscuchados">Mas Escuchados</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>Bon Jovi</td>
+                            <td>Is My Life</td>
+                            
+                            <td><span class="MasEscuchados">Mas Escuchados</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td>Avicii</td>
+                            <td>Waiting for love</td>
+                            
+                            <td><span class="MasEscuchados">Mas Escuchados</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>4</td>
+                            <td>Greeicy</td>
+                            <td>Los Besos</td>
+                            
+                            <td><span class="MenosEscuchados">Menos Escuchados</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>5</td>
+                            <td>Lisa</td>
+                            <td>Rockstar</td>
+                            
+                            <td><span class="MasEscuchados">Mas Escuchados</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>6</td>
+                            <td>Anitta</td>
+                            <td>Mil Veces</td>
+                           
+                            <td><span class="MenosEscuchados">Menos Escuchados</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>7</td>
+                            <td>Emilia</td>
+                            <td>Mothinha</td>
+                            
+                            <td><span class="MenosEscuchados">Menos Escuchados</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>8</td>
+                            <td>Duki</td>
+                            <td>Barro</td>
+                           
+                            <td><span class="MenosEscuchados">Menos Escuchados</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </section>
+
+            <footer>
+                <p>© 2026 Aura Music | Dashboard reportes de canciones</p>
+            </footer>
+
+        </main>
+
+    </div>
+
+</body>
+</html>

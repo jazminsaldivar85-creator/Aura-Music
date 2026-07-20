@@ -1,0 +1,581 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#121212;
+    color:white;
+    
+    background-color: #000;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.titulo-artistas{
+    text-align: center;
+    color: #ffffff;
+    font-size: 42px;
+    font-weight: bold;
+    margin: 40px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.titulo-registrarse{
+    text-align: center;
+    color: #ffffff;
+    font-size: 42px;
+    font-weight: bold;
+    margin: 40px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+/* ============================= */
+/* HEADER */
+/* ============================= */
+
+header{
+    width:100%;
+    height:80px;
+    background:#181818;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 60px;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1000;
+}
+
+.logo h1{
+    color:pink;
+    font-size:30px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin:0 15px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:pink;
+}
+
+.usuario{
+    font-size:25px;
+    cursor:pointer;
+}
+
+/* ============================= */
+/* PORTADA */
+/* ============================= */
+
+.hero{
+    margin-top:80px;
+    height:90vh;
+
+    background-image:
+    linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url("imagenes/fondo.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.contenido{
+    width:70%;
+}
+
+.contenido h2{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.contenido p{
+    font-size:22px;
+    margin-bottom:35px;
+}
+
+.contenido button{
+    background:pink;
+    color:white;
+    border:none;
+    padding:15px 40px;
+    border-radius:40px;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.contenido button:hover{
+    background:pink;
+    transform:scale(1.05);
+}
+
+/* ============================= */
+/* BUSCADOR */
+/* ============================= */
+
+.busqueda{
+    display:flex;
+    justify-content:center;
+    margin:50px;
+}
+
+.busqueda input{
+    width:500px;
+    padding:15px;
+    border:none;
+    border-radius:30px 0 0 30px;
+    font-size:17px;
+}
+
+.busqueda button{
+    width:60px;
+    border:none;
+    background:pink;
+    color:white;
+    border-radius:0 30px 30px 0;
+    cursor:pointer;
+    font-size:18px;
+}
+
+/* ============================= */
+/* TITULOS */
+/* ============================= */
+
+.albumes h1,
+.artistasdestacadosh1,
+.Albunespoplares h1{
+    text-align:center;
+    font-size:35px;
+    margin-bottom:40px;
+}
+
+/* ============================= */
+/* CONTENEDOR */
+/* ============================= */
+
+.contenedor{
+    width:90%;
+    margin:auto;
+
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+}
+
+/* ============================= */
+/* TARJETAS */
+/* ============================= */
+
+.card{
+
+    width:250px;
+
+    background:#181818;
+
+    border-radius:15px;
+
+    padding:20px;
+
+    text-align:center;
+
+    transition:.4s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    background:#282828;
+
+}
+
+.card img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+    border-radius:10px;
+
+}
+
+.card h3{
+
+    margin:15px 0 10px;
+
+}
+
+.card p{
+
+    color:#b3b3b3;
+
+    margin-bottom:15px;
+
+}
+
+.card button{
+
+    background:pink;
+
+    border:none;
+
+    color:white;
+
+    padding:12px 25px;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.card button:hover{
+
+    background:pink;
+
+}
+
+/* ============================= */
+/* ARTISTAS */
+/* ============================= */
+
+.artistas{
+
+    margin-top:80px;
+
+}
+
+.artista{
+
+    width:220px;
+
+    text-align:center;
+
+}
+
+.artista img{
+
+    width:180px;
+
+    height:180px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    transition:.3s;
+
+}
+
+.artista img:hover{
+
+    transform:scale(1.1);
+
+}
+
+.artista h3{
+
+    margin-top:15px;
+
+}
+
+/* ============================= */
+/* PLAYLIST */
+/* ============================= */
+
+.playlist{
+
+    width:80%;
+
+    margin:80px auto;
+
+}
+
+.playlist ul{
+
+    list-style:none;
+
+}
+
+.playlist li{
+
+    background:#181818;
+
+    padding:20px;
+
+    margin:15px 0;
+
+    border-radius:10px;
+
+    transition:.3s;
+
+    cursor:pointer;
+
+}
+
+.playlist li:hover{
+
+    background:pink;
+
+}
+
+/* ============================= */
+/* ESPACIOS */
+/* ============================= */
+
+.albumes{
+
+    margin-top:80px;
+
+}
+
+body{
+
+    padding-bottom:120px;
+
+}
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+
+@media(max-width:900px){
+
+header{
+
+    flex-direction:column;
+
+    height:auto;
+
+    padding:20px;
+
+}
+
+nav ul{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+.hero{
+
+    height:70vh;
+
+}
+
+.contenido h2{
+
+    font-size:40px;
+
+}
+
+.busqueda input{
+
+    width:250px;
+
+}
+
+.reproductor{
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+}
+.carousel-item img{
+    height: 500px;
+    object-fit: cover;
+}
+.card{
+    width: 350px;
+    margin: auto;
+}
+
+.carousel-item img{
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Fondo de la página */
+body{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Título */
+h1{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Descripción */
+p{
+    font-size: 18px;
+    color: #555;
+}
+
+/* Espacio entre tarjetas */
+.col-md-4{
+    margin-bottom: 30px;
+}
+
+/* Tarjeta */
+.card{
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.4s;
+    height: 100%;
+}
+
+/* Efecto al pasar el mouse */
+.card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px pink;
+}
+
+/* Imagen */
+.card img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Cuerpo de la tarjeta */
+.card-body{
+    text-align: center;
+    padding: 20px;
+}
+
+/* Título de la canción */
+.card-title{
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: white;
+}
+
+/* Botón */
+.btn{
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+/* Efecto botón */
+.btn:hover{
+    transform: scale(1.05);
+}
+
+/* Botón azul */
+.btn-primary{
+    background-color: pink;
+    border: none;
+}
+
+/* Botón verde */
+.btn-success{
+    background-color: pink;
+    border: none;
+}
+
+/* Botón rojo */
+.btn-danger{
+    background-color:pink;
+    border: none;
+}
+
+/* Responsive */
+@media (max-width:768px){
+
+    .card img{
+        height: 200px;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+    p{
+        font-size: 16px;
+    }
+}
+/* formulario de contacto */
+         body {
+            font-family: Arial;
+            background: black
+        
+        }
+        
+        main {
+            width: 550px;
+            margin: 40px auto;
+            background: pink;
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+        
+        }
+
+        input, select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            
+        }
+       
+            
+        button {
+            width: 100%;
+            margin-top: 20px;
+            padding: 12px;
+            background: white;
+            color: black;
+            border: none;
+        }
+    
